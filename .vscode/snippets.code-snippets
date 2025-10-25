@@ -1,0 +1,11 @@
+{
+    "Author Comment": {
+        "prefix": "author",
+        "body": [
+            "/**",
+            " * @author Pablo Bermejo Hernandez",
+            " */"
+        ],
+        "description": "Add author comment"
+    }
+}

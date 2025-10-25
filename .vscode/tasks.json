@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-current-file",
+      "type": "shell",
+      "command": "g++",
+      "args": ["-g", "-o", "${workspaceFolder}/build/${fileBasenameNoExtension}", "${file}"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "create-build-dir"
+    },
+    {
+      "label": "create-build-dir",
+      "type": "shell",
+      "command": "mkdir",
+      "args": ["-p", "build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ]
+}
